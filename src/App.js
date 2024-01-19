@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer/Footer";
+import Body from "./components/Body/Body";
+import Head from "./components/Head/Head";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center" }}>
+      <Head doesItHurt={"si"} />
+      <Body doesItHurt={"si"} />
+      <Footer doesItHurt={"si"} />
     </div>
   );
-}
+};
 
 export default App;
