@@ -17,7 +17,7 @@ export const Head = () => {
  
       <input onChange={(event)=>setEmail(event.target.value)}/>
       <input onChange={(event)=>setPassword(event.target.value)} type="password"/>
-      <button onClick={onLogIn()}>Log In on</button>
+      <button onClick={() => onLogIn()}>Log In on</button>
       {/*
       Duele mi cabeza? {doesItHurt}
       <button onClick={()=>setDoesItHurt("no")}>Desactivar dolor!</button>

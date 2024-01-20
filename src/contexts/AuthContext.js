@@ -2,8 +2,8 @@ import {createContext,useContext,useState} from "react";
 
 
 const AuthContext=createContext();
-const USER={email:"espiedra@puce.edu.ec",
-password:"1234"};
+const USER={email:"crchaves@puce.edu.ec",
+password:"123456"};
 export const AuthContextProvider=({children})=>{
 
   const [loggedIn,setLoggedIn]=useState("no");
@@ -12,7 +12,9 @@ export const AuthContextProvider=({children})=>{
   const onLogIn=()=>{
     if (email===USER.email  && password===USER.password){
       setLoggedIn("si")
-
+    }
+    else{
+      setLoggedIn("no")
     }
   }
   return (
